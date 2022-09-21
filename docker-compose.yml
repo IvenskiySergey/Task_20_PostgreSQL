@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+  postgres:
+    image: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/postgres
+    environment:
+      POSTGRES_PASSWORD: serge123
+      POSTGRES_USER: serge
+      POSTGRES_DB: db
